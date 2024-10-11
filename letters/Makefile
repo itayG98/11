@@ -13,7 +13,7 @@ SRCS = letters.c
 OBJS = $(SRCS:.c=.o)
 
 # Compilation flags
-CFLAGS = -Wall -ansi -pedantic # -Wno-uninitialized
+CFLAGS = -Wall -ansi -pedantic
 
 # Debug flags
 DEBUG_FLAGS = -g

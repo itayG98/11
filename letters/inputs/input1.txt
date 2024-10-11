@@ -1,0 +1,1 @@
+Hello lets try "This method" , It shall remove evry number from 1 to 9
