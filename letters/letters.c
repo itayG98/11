@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "char_values.h"
+#include "char_helper.h"
 
 /**
  * @brief Entry point for letter program.
@@ -34,16 +34,35 @@
  */
 int main()
 {
-    int current_char;
-    /* is_in_quote = 0, is_first_letter = 1; */
+    int current_char, is_in_quote = 0, is_first_letter = 1;
     printf("Please insert a text to manipulate.\n\n\n");
     while ((current_char = getchar()) != EOF)
     {
-        if (current_char >= ZERO_DIGIT && current_char <= NINE_DIGIT)
+        if (isDigit(current_char))
         {
             continue;
         }
-
+        else if (current_char == QUOTE)
+        {
+            is_in_quote = is_in_quote ? 0 : 1;
+        }
+        else if (!is_in_quote && current_char == DOT)
+        {
+            is_first_letter = 1;
+        }
+        else if (is_in_quote)
+        {
+            current_char = capitalize(current_char);
+        }
+        else if (isCharacter(current_char) && is_first_letter)
+        {
+            current_char = capitalize(current_char);
+            is_first_letter = 0;
+        }
+        else
+        {
+            current_char = uncapitalize(current_char);
+        }
         printf("%c", current_char);
     }
     return 1;

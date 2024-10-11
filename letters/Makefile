@@ -7,7 +7,7 @@ CC = gcc
 TARGET = letters
 
 # Source files
-SRCS = letters.c
+SRCS = letters.c char_helper.c
 
 # Object files
 OBJS = $(SRCS:.c=.o)
