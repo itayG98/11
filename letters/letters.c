@@ -4,7 +4,7 @@
 /**
  * @brief Entry point for letter program.
  *
- * This function prompts the user for inserting text via stdin (could be file or console) and than manipulate it
+ * This function prompts the user for inserting text via stdin (could be file or console) and than manipulate it.
  * Capitalize first letter and quted texts , uncapitlize other letters and remove digits.
  * *
  * Example usage:
