@@ -9,6 +9,7 @@ The Letter Manipulation Program reads text input from the user (either from the 
 - Capitalizing the first letter of each sentence and quoted text.
 - Uncapitalizing other letters outside of quotes.
 - Removing any digits from the text.
+-sentence is start withing dot '.' only.
 
 ### Example Usage
 To run the program, compile it with the following command:
@@ -23,22 +24,28 @@ Then execute the program:
 
 #### Input Example
 ```
-I Am young. You are young. All of us are young.
-"I think we  need    some help.  please" HELP. NO,   NO  NO,
-I DO NOT NEED HELP
-WHATSOEVER.
-"Todays date is 15/2/2021"...
-I am 18 years old, are you 20 years old? Maybe      30 years?
+  I Am young. You are young. all of us aRe young.
+ "I think we  need    some help.  please" HELP. NO,   NO  NO,
+ I DO NOT
+      NEED HELP
+ 
+  WHATSOEVER.
+  "Todays date is
+       15/2/2021"...
+  I am 18  years old, are you 20 years old? Maybe      30 years?
 ```
 
 #### Output Example
 ```
-I Am young. You are young. All of us are young.
-"I THINK WE  NEED    SOME HELP.  PLEASE" help. NO,   no  no,
-i do not NEED HELP
-WHATSOEVER.
-"TODAY'S DATE IS"...
-I am   years old, are you  years old? maybe      30 years?
+  I am young. You are young. All of us are young.
+ "I THINK WE  NEED    SOME HELP.  PLEASE" Help. No,   no  no,
+ i do not
+      need help
+ 
+  whatsoever.
+  "TODAYS DATE IS
+       //"...
+  I am   years old, are you  years old? maybe       years?
 ```
 
 ---
