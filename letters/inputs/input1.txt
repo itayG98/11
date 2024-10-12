@@ -1,1 +1,1 @@
-Hello lets try "This method" , It shall remove evry number from 1 to 9
+Hello lets try "This method" , It shall remove every number from 1 to 9. dot is a sign for a "NEW line".

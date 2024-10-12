@@ -1,0 +1,4 @@
+Please insert a text to manipulate.
+
+
+Hello lets try "THIS METHOD" , it shall remove every number from  to . Dot is a sign for a "NEW LINE".
