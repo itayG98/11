@@ -32,15 +32,14 @@ int main()
     scanf("%lu %lu", &x, &y);
     printf("x = ");
     print_binary_with_mask(x);
-    x += generate_mask_by_shift(SIX_DIGIT);
-    printf("Turned on the %d (counted from zero) bit.\n", SIX_DIGIT);
+    x += generate_mask_by_shift(TWELVE_DIGIT);
+    printf("Turned on the %d (counted from zero) bit.\n", TWELVE_DIGIT);
     printf("x = ");
     print_binary_with_mask(x);
     printf("y = ", y);
     print_binary_with_mask(y);
-    printf("Check if the %d (counted from zero) bit is on.\n", TWELVE_DIGIT);
-    print_is_bit_on(y, TWELVE_DIGIT);
-    scanf("%lu", x);
+    printf("Check if the %d (counted from zero) bit is on.\n", SIX_DIGIT);
+    print_is_bit_on(y, SIX_DIGIT);
     return 1;
 }
 

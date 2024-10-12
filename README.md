@@ -9,7 +9,7 @@ The Letter Manipulation Program reads text input from the user (either from the 
 - Capitalizing the first letter of each sentence and quoted text.
 - Uncapitalizing other letters outside of quotes.
 - Removing any digits from the text.
--sentence is start withing dot '.' only.
+- sentence is start withing dot '.' only.
 
 ### Example Usage
 To run the program, compile it with the following command:
@@ -24,7 +24,7 @@ Then execute the program:
 
 #### Input Example
 ```
-  I Am young. You are young. all of us aRe young.
+  I Am young. You are young. all of us are young.
  "I think we  need    some help.  please" HELP. NO,   NO  NO,
  I DO NOT
       NEED HELP
@@ -56,7 +56,7 @@ Then execute the program:
 The Bit Manipulation Program takes two unsigned long integers as input and performs bitwise operations to manipulate and display the values. It specifically:
 
 - Prints the binary representation of the first number.
-- Turns on the 13th bit of the first number and displays the result.
+- Turns on the 6th bit of the first number and displays the result.
 - Checks if the 12th bit of the second number is set and prints "YES" or "NO".
 
 ### Example Usage
@@ -78,11 +78,12 @@ Then execute the program:
 #### Output Example
 ```
 x = 00000000000000000000000000000101
-Turned on the 6 (counted from zero) bit.
-x = 00000000000000000000000000001011
+Turned on the 12 (counted from zero) bit.
+x = 00000000000000000001000000000101
 y = 00000000000000000000000010000000
-Check if the 12 (counted from zero) bit is on.
-YES
+Check if the 6 (counted from zero) bit is on.
+NO
+
 ```
 
 ### Functions Overview
