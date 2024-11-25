@@ -1,5 +1,3 @@
-# -*- MakeFile -*-
-
 # Compiler
 CC = gcc
 

@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "char_helper.h"
+#include <ctype.h>
+#include "letters.h"
 
 /**
  * @brief Entry point for letter program.
@@ -38,7 +39,7 @@ int main()
     printf("Please insert a text to manipulate.\n\n\n");
     while ((current_char = getchar()) != EOF)
     {
-        if (isDigit(current_char))
+        if (isdigit(current_char))
         {
             continue;
         }
@@ -52,16 +53,16 @@ int main()
         }
         else if (is_in_quote)
         {
-            current_char = capitalize(current_char);
+            current_char = toupper(current_char);
         }
         else if (isCharacter(current_char) && is_first_letter)
         {
-            current_char = capitalize(current_char);
+            current_char = toupper(current_char);
             is_first_letter = 0;
         }
         else
         {
-            current_char = uncapitalize(current_char);
+            current_char = tolower(current_char);
         }
         printf("%c", current_char);
     }

@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "char_helper.h": "c",
+        "ctype.h": "c"
+    }
+}
